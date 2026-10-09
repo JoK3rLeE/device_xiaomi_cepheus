@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Enable the device-specific Xiaomi AI key integration
+TARGET_XIAOMI_AI_KEY := true
+
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
@@ -599,8 +602,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     firmware_wlan_mac.bin_symlink \
     firmware_WCNSS_qcom_cfg.ini_symlink
-# Xiaomi AI key support
-TARGET_XIAOMI_AI_KEY := true
-
+# Xiaomi Parts AI key settings
 PRODUCT_PACKAGES += \
     XiaomiParts
