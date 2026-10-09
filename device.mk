@@ -599,3 +599,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     firmware_wlan_mac.bin_symlink \
     firmware_WCNSS_qcom_cfg.ini_symlink
+# Xiaomi AI key support
+TARGET_XIAOMI_AI_KEY := true
+
+PRODUCT_PACKAGES += \
+    XiaomiParts
